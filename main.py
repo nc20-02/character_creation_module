@@ -1,5 +1,7 @@
 from random import randint
 
+from graphic_arts.start_game_banner import run_screensaver
+
 
 def attack(char_name: str, char_class: str) -> str:
     if char_class == 'warrior':
@@ -62,7 +64,7 @@ def choice_char_class() -> str:
         if char_class == 'healer':
             print('Лекарь — заклинатель. Черпает силы из природы.')
         approve_choice: str = input('Нажми (Y), чтобы'
-                                    'подтвердить выбор').lower()
+                                    'подтвердить выбор ').lower()
     return char_class
 
 
